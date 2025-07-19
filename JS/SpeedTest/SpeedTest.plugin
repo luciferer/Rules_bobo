@@ -1,0 +1,12 @@
+#!name= SpeedTest测速
+#!desc= 这是一个网络测速插件，能够测试网络延迟与下载速度.
+#!icon= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/miniColor/Image/Color/Speedtest.png
+#!system = iOS
+#!system_version = 18
+#!loon_version = 3.2.1(372)
+#!tag = 网络,测速
+
+
+[script]
+generic script-path = https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SpeedTest/JS/SpeedTest.js, tag = SpeedTest测速, img-url = https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/miniColor/Image/Color/Speedtest.png
+
