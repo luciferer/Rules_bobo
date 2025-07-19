@@ -1,0 +1,12 @@
+#!name=iOSGods解锁VIP
+#!desc=iOSGods解锁VIP
+#!category=😍BOBO Premium
+#!openUrl=https://iosgods.com
+
+[Script]
+# > iOSGods解锁VIP
+http-response ^https:\/\/iosgods\.com\/menu\/igauthads\.json$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iOSGods/JS/iOSGodsgrps.js, requires-body=true, timeout=60, tag=iOSGodsgrps
+http-response ^https:\/\/iosgods\.com\/api\/core\/me$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iOSGods/JS/iOSGodsprem.js, requires-body=true, timeout=60, tag=iOSGodsprem
+
+[Mitm]
+hostname = iosgods.com
