@@ -524,7 +524,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
     }
 
     //#!arguments参数
-    if (/^#!arguments\s*=\s*.+/.test(x) || /^[^#]=\s*(input|select|switch)\s*,/.test(x)) {
+    if (/^#!arguments\s*=\s*.+/.test(x) || /^[^#].+?=\s*(input|select|switch)\s*,/.test(x)) {
       parseArguments(x)
     }
 
@@ -610,7 +610,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
       const jsptn = regex
       let args = [[action, newSuffixArray]]
 
-      if (jqEnabled && (isSurgeiOS || isStashiOS)) {
+      if (jqEnabled && (isSurgeiOS || isStashiOS || isShadowrocket)) {
         if (action === 'json-add') {
           newSuffixArray.forEach(item => {
             const paths = parseJsonPath(item[0])
@@ -642,6 +642,8 @@ if (binaryInfo != null && binaryInfo.length > 0) {
           newSuffixArray = newSuffixArray.map(item => item.join(' '))
           rwbodyBox.push({ type: jstype, regex: jsptn, value: newSuffixArray.join(' ') })
         }
+      }else if (jqEnabled && isLooniOS) {
+        URLRewrite.push(x)
       } else {
         // console.log(JSON.stringify(args, null, 2))
         const index = jsBox.findIndex(i => i.jsurl === jsurl && i.jstype === jstype && i.jsptn === jsptn)
@@ -822,7 +824,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
       updatetime = getJsInfo(x, /[=,\s]\s*script-update-interval\s*=\s*/)
       timeout = getJsInfo(x, /[=,\s]\s*timeout\s*=\s*/)
       tilesicon = jstype == 'generic' && /icon=/.test(x) ? x.split('icon=')[1].split('&')[0] : ''
-      tilescolor = jstype == 'generic' && /icon-color=/.test(x) ? x.split('icon-color=')[1].split('&')[0] : ''
+      tilescolor = jstype == 'generic' && /icon-color=/.test(x) ? x.split('icon-color=')[1].split('&')[0] : '#5d84f8'
       if (nCron != null && jstype != 'cron') {
         for (let i = 0; i < nCron.length; i++) {
           let elem = nCron[i].trim()
@@ -839,6 +841,8 @@ if (binaryInfo != null && binaryInfo.length > 0) {
               updatetime,
               wakesys: '1',
               timeout: '120',
+              jsarg: '',
+              rebody: '',
               ori: x,
               num: y,
             })
@@ -905,6 +909,8 @@ if (binaryInfo != null && binaryInfo.length > 0) {
               jsurl,
               wakesys: '1',
               timeout: '120',
+              jsarg: '',
+              rebody: '',
               ori: x,
               num: y,
             })
@@ -923,6 +929,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
         proto,
         size,
         timeout: '60',
+        jsarg,
         ori: x,
         num: y,
       })
@@ -961,10 +968,12 @@ if (binaryInfo != null && binaryInfo.length > 0) {
         jsptn: '',
         cronexp,
         jsurl,
+        jsarg: '',
         wakesys: '1',
         timeout: '120',
+        rebody: '',
         ori: x,
-        num: y,
+        num: y
       })
     } //qx cron 脚本解析结束
 
@@ -974,7 +983,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
       getMockInfo(x, mark, y)
     }
   } //for await循环结束
-
+//console.log($.toStr(jsBox))
   //去重
   let obj = {}
 
@@ -1021,9 +1030,9 @@ if (binaryInfo != null && binaryInfo.length > 0) {
 
   jsBox = jsBox.reduce((curr, next) => {
     /*判断对象中是否已经有该属性  没有的话 push 到 curr数组*/
-    obj[next.jstype + next.jsptn + next.jsurl + next.jsarg]
+    obj[next.jstype + next.jsptn + next.jsurl + next.jsarg + next.rebody]
       ? ''
-      : (obj[next.jstype + next.jsptn + next.jsurl + next.jsarg] = curr.push(next))
+      : (obj[next.jstype + next.jsptn + next.jsurl + next.jsarg + next.rebody] = curr.push(next))
     return curr
   }, [])
 
@@ -1057,7 +1066,7 @@ if (binaryInfo != null && binaryInfo.length > 0) {
   realBox = pieceHn(realBox)
   if (synMitm) fheBox = hnBox
 
-  if (isSurgeiOS && sgArg.length > 0) {
+  if ((isSurgeiOS || isShadowrocket) && sgArg.length > 0) {
     let sgargArr = []
     for (let i = 0; i < sgArg.length; i++) {
       let key = sgArg[i].key
@@ -1107,13 +1116,13 @@ if (binaryInfo != null && binaryInfo.length > 0) {
       break
   } //模块信息输出结束
 
-  //[Argument]输出
+  //surge模块参数转[Argument]输出
   if (isLooniOS && sgArg.length > 0) {
     for (let i = 0; i < sgArg.length; i++) {
       let key = sgArg[i].key
       let type = sgArg[i].type
       let value = sgArg[i].value
-      if (type == 'switch') value = /^true/.test(value) ? 'true,false' : 'false,true'
+      if (type == 'switch') value = /^true/.test(value) ? '"true","false"' : '"false","true"'
       let tag = sgArg[i].tag
       loonArg.push(key + '=' + type + ',' + value + ',' + tag)
     }
@@ -1287,7 +1296,13 @@ if (binaryInfo != null && binaryInfo.length > 0) {
 
   for (let i = 0; i < rwbodyBox.length; i++) {
     const { type, regex, value } = rwbodyBox[i]
-    BodyRewrite.push(`${type} ${regex} ${value}`)
+    if (isSurgeiOS || isShadowrocket){
+      BodyRewrite.push(`${type} ${regex} ${value}`)
+    }else if (isLooniOS){
+      let type2 = /request/.test(type) ? 'request-body-json-jq' : 'response-body-json-jq';
+      URLRewrite.push(`${regex} ${type2} ${value}`)
+    }
+    
   }
 
   //headerRewrite输出
@@ -1298,6 +1313,8 @@ if (binaryInfo != null && binaryInfo.length > 0) {
     const isResponseHeaderRewrite = /^http-response\s/.test(x)
     switch (targetApp) {
       case 'surge-module':
+      case 'shadowrocket-module':
+      
         HeaderRewrite.push(mark + noteK + x)
         break
 
@@ -1326,10 +1343,6 @@ if (binaryInfo != null && binaryInfo.length > 0) {
         let hdtype = isResponseHeaderRewrite ? ' response-' : ' request-'
         x = x.replace(/^http-(?:request|response)\s+/, '').replace(/\s+header-/, hdtype)
         HeaderRewrite.push(mark + `${noteK4}- >-${noteKn6}` + x)
-        break
-
-      case 'shadowrocket-module':
-        otherRule.push(noteK + x)
         break
     } //headerRewrite输出结束
   } //for
@@ -1371,6 +1384,15 @@ if (binaryInfo != null && binaryInfo.length > 0) {
             : ''
         MapLocal.push(mark + noteK + mockptn + mocktype + mockurl + mockstatus + mockheader)
         break
+
+      case 'shadowrocket-module':
+        mockheader =
+          mockBox[i].mockheader && !/&contentType=/.test(mockBox[i].mockheader)
+            ? ' header="' + mockBox[i].mockheader + '"'
+            : ''
+        MapLocal.push(mark + noteK + mockptn + mocktype + mockurl + mockheader)
+        break
+
       case 'loon-plugin':
         URLRewrite.push(
           mark +
@@ -1781,9 +1803,10 @@ ${MITM}
             .replace(/^(request|response)$/, '$1-replace-regex')} ${value
             .replace(/^"(.+)"$/, '$1')
             .replace(/^'(.+)'$/, '$1')
-            .split(' ')
-            .map(i => i.replace(/^"(.+)"$/, '$1').replace(/^'(.+)'$/, '$1'))
-            .join(' ')}`
+            //.split(' ')
+            //.map(i => i.replace(/^"(.+)"$/, '$1').replace(/^'(.+)'$/, '$1'))
+            //.join(' ')
+            }`
         )
       }
       if (StashBodyRewrite.length > 0) {
@@ -1836,14 +1859,14 @@ ${providers}
       break
   } //输出内容结束
   body = body.replace(/\n{2,}/g, '\n\n')
-  if (!isSurgeiOS && !isLooniOS && sgArg.length > 0) {
+  if (isStashiOS && sgArg.length > 0) {
     body = body.replaceAll('{{{', '{').replaceAll('}}}', '}')
     for (let i = 0; i < sgArg.length; i++) {
       let e = '{' + sgArg[i].key + '}'
       let r = sgArg[i].value.split(',')[0]
       body = body.replaceAll(e, r)
     } //for
-  } else if (isSurgeiOS) {
+  } else if (isSurgeiOS || isShadowrocket) {
     body = body.replaceAll('{{{', '{').replaceAll('}}}', '}')
     for (let i = 0; i < sgArg.length; i++) {
       let e = '{' + sgArg[i].key + '}'
@@ -1942,6 +1965,7 @@ function getModInfo(x) {
   let key = x.match(regex)[1] == 'keyword' ? 'category' : x.match(regex)[1]
   let value = x.match(regex)[2]
   modInfoObj[key] = value
+  //console.log(key)
 }
 
 //获取可莉图标集
@@ -2192,6 +2216,7 @@ function getMockInfo(x, mark, y) {
   }
   switch (targetApp) {
     case 'surge-module':
+    case 'shadowrocket-module':
       if (mockbase64 && datapath) {
         const e = `暂不支持远程 base64:\n${x}`
         console.log(e)
@@ -2216,7 +2241,6 @@ function getMockInfo(x, mark, y) {
         mocknum: y,
       })
       break
-    case 'shadowrocket-module':
     case 'stash-stoverride':
       let mfile = mocktype == 'file' ? mockurl.substring(mockurl.lastIndexOf('/') + 1) : mockurl
       let m2rType
