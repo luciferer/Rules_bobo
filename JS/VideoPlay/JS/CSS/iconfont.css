@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4885201 */
-  src: url('//at.alicdn.com/t/c/font_4885201_i2n2iwmepf.woff2?t=1744699379067') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4885201_i2n2iwmepf.woff?t=1744699379067') format('woff'),
-       url('//at.alicdn.com/t/c/font_4885201_i2n2iwmepf.ttf?t=1744699379067') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_4885201_q3amtgf1jhl.woff2?t=1747807104334') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4885201_q3amtgf1jhl.woff?t=1747807104334') format('woff'),
+       url('//at.alicdn.com/t/c/font_4885201_q3amtgf1jhl.ttf?t=1747807104334') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,30 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo1:before {
+  content: "\e62d";
+}
+
+.icon-moren:before {
+  content: "\e62b";
+}
+
+.icon-recover:before {
+  content: "\e60d";
+}
+
+.icon-bizhishezhi:before {
+  content: "\e601";
+}
+
+.icon-shanchu:before {
+  content: "\e6cd";
+}
+
+.icon-a-shoucang-yishoucang:before {
+  content: "\e6d3";
 }
 
 .icon-Gc_85_face-Skip:before {
