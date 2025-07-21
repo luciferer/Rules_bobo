@@ -7,7 +7,6 @@
 使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
 
 *******************************
-
 [rewrite_local]
 # > 去广告
 ^https://app\.c\.nf.migu\.cn/strategy/listen-url/v2.5 url 302 https://app.c.nf.migu.cn/strategy/listen-url/v2.4
