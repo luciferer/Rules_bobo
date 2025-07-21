@@ -49,7 +49,8 @@ DOMAIN,*.adukwai.com,REJECT
 ^https://.*miguvideo\.com/request/sdk reject-200
 ^https://common-sc\.miguvideo\.com/task/v7/task-list/cmvideo/visitor reject-200
 
-# > 咪咕音乐vip、音质、下载
+# > 咪咕音乐去广告
+^https://app\.c\.nf.migu\.cn/strategy/listen-url/v2.5 302 https://app.c.nf.migu.cn/strategy/listen-url/v2.4
 ^https://app\.c\.nf\.migu\.cn/member/api/marketing/text reject
 ^https://app\.c.nf\.migu\.cn/payment/watch-ad reject-200
 
@@ -546,9 +547,10 @@ http-response ^https?:\/\/(play|dis).*miguvideo.com\/(play|dis)(url|play)\/.*$ s
 http-request ^https?:\/\/play.miguvideo.com\/playurl\/v1\/play\/playurl\?2Kvivid=true?.*=true$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuShiPin/JS/MiGuShiPinck.js, timeout=60
 
 
-# > 咪咕音乐vip、音质、下载
-http-response ^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserInfo.do|member\/center))|(column\/(startup-pic-with-ad|marketing\/advertising)|\/resource\/skin\/list\/).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, requires-body=true, timeout=60, tag=咪咕音乐vip
-http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, timeout=60, tag=咪咕音乐vip
+# > 咪咕音乐解锁Vip、音质
+http-response ^https?:\/\/(u|c|app).(musicapp|(c|u).nf).migu.cn.+(user\/api|column\/startup|resource\/skin) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/JS-1/MiGuMusic.js, requires-body=true, timeout=60, tag=MiGuMusic
+http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/JS-1/MiGuMusic-CK.js, timeout=60, tag=MiGuMusic-CK
+
 
 
 # > 海角社区解锁会员视频&付费视频
