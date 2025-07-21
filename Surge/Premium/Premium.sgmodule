@@ -284,34 +284,33 @@ VideoFusionVipCrack = type=http-request, pattern=^https?:\/\/commerce-api-.*\.fa
 
 # > 酷我音乐解锁会员
 # > 搜索框处理
-Kuwo = type=http-response, pattern=https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 会员页广告
-Kuwo = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 会员页顶部广告tab
-Kuwo = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 开屏广告
-Kuwo = type=http-response, pattern=https?:\/\/rich\.kuwo\.cn\/AdService, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=https?:\/\/rich\.kuwo\.cn\/AdService, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 数字专辑
-Kuwo = type=http-response, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 听书权限接口1
-Kuwo = type=http-response, pattern=^https?:\/\/[a-z0-9A-Z]+\.(kuwo|lrts)\.(cn|me)\/a\.p, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/[a-z0-9A-Z]+\.(kuwo|lrts)\.(cn|me)\/a\.p, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 听书权限接口2
-Kuwo = type=http-response, pattern=^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 新版vip接口1
-Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 新版vip接口2
-Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 旧版vip接口
-Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip\?(uid|op=ui), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip\?(uid|op=ui), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 皮肤解锁
-Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 下载接口
-Kuwo = type=http-request, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, timeout=60
+Kuwo = type=http-request, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, timeout=60
 # > 我的页面卡片
-Kuwo = type=http-response, pattern=^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
+Kuwo = type=http-response, pattern=^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 # > 音乐播放接口
-Kuwo = type=http-response, pattern=^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, max-size=-1, timeout=60
-
+Kuwo = type=http-response, pattern=^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, max-size=-1, timeout=60
 
 
 
