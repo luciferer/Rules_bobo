@@ -1,7 +1,8 @@
 #!name=YouTube去广告(>=iOS15)
 #!desc=去首页瀑布流广告/播放页推荐列表广告(非贴片广告)
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=app2smile[https://github.com/app2smile]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YouTube.png
 #!openUrl=https://apps.apple.com/app/id544007664
 
@@ -9,5 +10,5 @@
 # > YouTube去广告(>=iOS15)
 http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YouTube/JS/YouTube.js, requires-body=true, binary-body-mode=true, timeout=10, tag=youtube-proto
 
-[Mitm]
+[MITM]
 hostname = youtubei.googleapis.com
