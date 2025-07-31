@@ -1,7 +1,8 @@
 #!name=B612
 #!desc=B612解锁VIP
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=彭于晏89996462[https://github.com/89996462/Quantumult-X]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/B612.png
 #!openUrl=https://apps.apple.com/app/id904209370
 
@@ -9,5 +10,5 @@
 # > B612解锁VIP
 http-response ^https:\/\/user-b612-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/B612/JS/B612.js, requires-body=true, timeout=60, tag=B612解锁VIP
 
-[Mitm]
+[MITM]
 hostname = user-b612-api.snow.me
