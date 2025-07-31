@@ -1,6 +1,8 @@
 #!name=iOSGods解锁VIP
 #!desc=iOSGods解锁VIP
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=SubTek[https://github.com/SubTek/Script]
 #!openUrl=https://iosgods.com
 
 [Script]
@@ -8,5 +10,5 @@
 http-response ^https:\/\/iosgods\.com\/menu\/igauthads\.json$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iOSGods/JS/iOSGodsgrps.js, requires-body=true, timeout=60, tag=iOSGodsgrps
 http-response ^https:\/\/iosgods\.com\/api\/core\/me$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iOSGods/JS/iOSGodsprem.js, requires-body=true, timeout=60, tag=iOSGodsprem
 
-[Mitm]
+[MITM]
 hostname = iosgods.com
