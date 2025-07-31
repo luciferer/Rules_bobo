@@ -1,6 +1,8 @@
 #!name=酷我音乐
 #!desc=解锁VIP歌曲，VIP听书，VIP装扮---脚本工作原理为音源替换而非破解
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=墨鱼ddgksf2013[https://github.com/ddgksf2013/MoYu]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/KuWo.png
 #!openUrl=https://apps.apple.com/app/id588673713
 
@@ -49,5 +51,5 @@ http-response ^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells script-path=https:
 http-response ^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/JS-1/KuWo.js, requires-body=true, timeout=60, tag=Kuwo
 
 
-[Mitm]
+[MITM]
 hostname = *.kuwo.cn, *.lrts.me
