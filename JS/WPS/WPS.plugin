@@ -1,6 +1,8 @@
 #!name=WPS解锁
 #!desc=WPS解锁解锁超级会员Pro、稻壳会员  软件版本：11.26.0
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=浥轻尘yqc007[https://github.com/yqc007/QuantumultX]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WPS.png
 #!openUrl=https://www.wps.cn/
 
@@ -15,5 +17,5 @@ http-response ^https?:\/\/(account|drive|vas|userinfo.docer)\.wps\.cn\/(.*api\/(
 http-request ^https?:\/\/(mobile|client|vas|download)(\.docer)?\.wps.cn\/(android\/mb\/buy_info|api\/v1\/mobile\/mb\/detail|query\/api\/v1\/list_privilege_info|download\/adapter\/v1\/mb) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/JS-1/WPSuperVIPowerCrack.js, timeout=60, tag=WPSuperVIPowerCrack
 
 
-[Mitm]
+[MITM]
 hostname = *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn
