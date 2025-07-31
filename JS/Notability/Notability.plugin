@@ -1,6 +1,8 @@
 #!name=Notability解锁
 #!desc=Notability解锁2099年
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png
 #!openUrl=https://apps.apple.com/app/id360593530
 
@@ -8,5 +10,5 @@
 # > Notability解锁2099年
 http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/JS-1/Notability.js, requires-body=true, timeout=60, tag=Notability
 
-[Mitm]
+[MITM]
 hostname = notability.com
