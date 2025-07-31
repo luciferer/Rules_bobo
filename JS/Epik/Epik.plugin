@@ -1,7 +1,8 @@
 #!name=Epik解锁Pro
 #!desc=Epik解锁Pro.SNOW-系列解锁
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Epik.png
 #!openUrl=https://apps.apple.com/app/id1577705074
 
@@ -9,5 +10,5 @@
 # > Epik解锁Pro
 http-response ^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Epik/JS/Epik.js, requires-body=true, timeout=60, tag=Epik解锁Pro
 
-[Mitm]
+[MITM]
 hostname = *.snow.me
