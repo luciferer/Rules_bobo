@@ -1,7 +1,10 @@
 #!name=网易云音乐
 #!desc=解锁会员-可开超清母带、沉浸环绕声
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=暗夜anyehttp[https://github.com/anyehttp]
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png
+#!openUrl = https://apps.apple.com/app/id590338362
 
 
 [Script]
