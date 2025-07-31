@@ -1,7 +1,8 @@
 #!name=阿基米德-广播电台音频FM
 #!desc=阿基米德-广播电台音频FM解锁永久Vip
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=Rnik666[https://github.com/Rnik666/YJTJS]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AJiMiDe.png
 #!openUrl=https://apps.apple.com/app/id920700920
 
@@ -9,5 +10,5 @@
 # > 阿基米德-广播电台音频FM解锁永久Vip
 http-response ^https?:\/\/a\.ajmide\.com\/(v21|v29)\/get_user_(detail|home)\.php$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AJiMiDe/JS/AJMD.js, requires-body=true, timeout=60, tag=阿基米德-广播电台音频FM解锁永久Vip
 
-[Mitm]
+[MITM]
 hostname = a.ajmide.com
