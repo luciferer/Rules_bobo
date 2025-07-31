@@ -1,6 +1,8 @@
 #!name=音流
 #!desc=永久解锁VIP
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=osinx[https://github.com/osinx/Script]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StreamMusic.png
 #!openUrl=https://apps.apple.com/app/id6449966496
 
@@ -8,5 +10,5 @@
 # > 音流解锁VIP
 http-response ^https:\/\/pay\.aqzscn\.cn\/api\/v1\/payments\/ script-path = https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StreamMusic/JS/StreamMusic.js, requires-body = true, tag = 音流解锁VIP
 
-[Mitm]
+[MITM]
 hostname = pay.aqzscn.cn
