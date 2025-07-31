@@ -434,3 +434,41 @@
     - [Paramount+](https://apps.apple.com/us/app/paramount/id530168168)（部分支持）
     - [Prime Video](https://apps.apple.com/us/app/amazon-prime-video/id545519333)（不推荐）
     - General（其他自配流媒体）
+
+
+## 下载
+
+- Surge 模块
+    - 聚合版 Dualsub：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Dualsub.sgmodule)
+    - 独立版
+        - Disney+：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/DisneyPlus-Dualsub.sgmodule)
+        - HBO Max：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/HBO-Max-Dualsub.sgmodule)
+        - Hulu：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Hulu-Dualsub.sgmodule)
+        - Netflix：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Netflix-Dualsub.sgmodule)
+        - Paramount+：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/ParamountPlus-Dualsub.sgmodule)
+        - Prime Video：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Prime-Video-Dualsub.sgmodule)
+        - YouTube：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/YouTube-Dualsub.sgmodule)
+    
+    <aside>
+    💡 按需下载安装 聚合 或 独立版，不是全部安装！
+    
+    </aside>
+    
+- Quantumult X Snippet
+    - 聚合版 Dualsub：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Dualsub.snippet)
+    - 独立版
+        - Disney+：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/DisneyPlus-Dualsub.snippet)
+        - HBO Max：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/HBO-Max-Dualsub.snippet)
+        - Hulu：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Hulu-Dualsub.snippet)
+        - Netflix：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Netflix-Dualsub.snippet)
+        - Paramount+：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/ParamountPlus-Dualsub.snippet)
+        - Prime Video：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/Prime-Video-Dualsub.snippet)
+        - YouTube：👉[下载](https://raw.githubusercontent.com/Neurogram-R/Quantumult-X/main/snippet/YouTube-Dualsub.snippet)
+    
+    <aside>
+    💡 按需下载安装 聚合 或 独立版，不是全部安装！
+    
+    </aside>
+    
+- Shortcuts：👉[安装](https://www.icloud.com/shortcuts/8ec4a2a3af514282bf27a11050f39fc2)
+
