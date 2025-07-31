@@ -1,6 +1,8 @@
 #!name=nPlayer 中文元数据修复
 #!desc=修复 nPlayer 在获取影片中文元数据时得到英文的问题
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=rartv[https://github.com/rartv/SurgeScript]
 
 [Script]
 nPlayer 中文元数据修复 = type=http-request,pattern=api_key=6829be025de07f56845fbb450f96dc0d,requires-body=false,script-path= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/nPlayer/JS/nPlayer.js,debug=false
