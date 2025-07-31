@@ -1,9 +1,11 @@
 #!name=BoxJs
-#!desc=http://boxjs.com
-#!author=ChavyLeung
-#!homepage=https://docs.boxjs.app/
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BoxJs.png
+#!desc=Data manager
+#!date=2025-08-01
 #!category=BoxJs
+#!author=chavyleung[https://github.com/chavyleung/scripts]
+#!homepage=https://chavyleung.gitbook.io/boxjs/
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BoxJs.png
+#!openUrl=http://boxjs.com
 
 [General]
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
