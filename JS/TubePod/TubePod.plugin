@@ -1,12 +1,14 @@
 #!name=TubePod解锁Lifetime
 #!desc=TubePod解锁Lifetime
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=baby[https://github.com/Yu9191]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TubePod.png
 #!openUrl=https://apps.apple.com/app/id6636469468
 
 [Script]
-# > ccccccccccccccccc
+# > TubePod解锁Lifetime
 http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TubePod/JS/TubePod.js, requires-body=true, timeout=60, tag=TubePod解锁Lifetime
 
-[Mitm]
+[MITM]
 hostname = buy.itunes.apple.com
