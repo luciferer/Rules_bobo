@@ -1,7 +1,8 @@
 #!name=FaceSwapper-AI换脸
 #!desc=FaceSwapper-AI换脸解锁Vip
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FaceSwapper.png
 #!openUrl=https://apps.apple.com/app/id6447933137
 
@@ -9,5 +10,5 @@
 # > FaceSwapper-AI换脸解锁Vip
 http-response ^https?:\/\/api-.*\.facereplacerext\.com\/api\/rest\/commerce\/integrate\/vip\/perform script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FaceSwapper/JS/FaceSwapper.js, requires-body=true, timeout=60, tag=FaceSwapper-AI换脸解锁Vip
 
-[Mitm]
+[MITM]
 hostname = api-*.facereplacerext.com
