@@ -1,17 +1,14 @@
 #!name = Turrit
 #!desc = Telegram外部链接跳转至Turrit
-#!openUrl = https://apps.apple.com/app/id6471781238
-#!author = sooyaaabo[https://github.com/sooyaaabo]
-#!tag = 功能增强
-#!system = 
-#!system_version = 
-#!loon_version = 3.2.9(837)
-#!homepage = https://github.com/sooyaaabo/Loon/blob/main/README.md
+#!date=2025-08-01
+#!category=😍BOBO Premium
+#!author= BOBOLAOSHIV587[https://github.com/BOBOLAOSHIV587/Rules]
 #!icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/Turrit.png
-#!date = 2025-03-21 23:00
+#!openUrl = https://apps.apple.com/app/id6471781238
+
 
 [Rewrite]
 (https:\/\/)?t\.me\/(.+) 307 turrit://resolve?domain=$2
 
-[MitM]
+[MITM]
 hostname = t.me
