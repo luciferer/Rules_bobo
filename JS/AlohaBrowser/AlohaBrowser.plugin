@@ -1,14 +1,14 @@
-#!name=Aloha Browser解锁Premium
-#!desc=Aloha Browser解锁Premium.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
-#!date=2024-11-01
+#!name=Aloha Browser
+#!desc=Aloha Browser解锁Premium.
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=Mike-offers[https://github.com/Mike-offers/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AlohaBrowser.png
 #!openUrl=https://apps.apple.com/app/id1105317682
 
 [Script]
 # > Aloha Browser解锁Premium
-http-response ^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AlohaBrowser/JS/AlohaBrowser.js, requires-body=true, timeout=60, tag=AlohaBrowser
+http-response ^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AlohaBrowser/JS/AlohaBrowser.js, requires-body=true, timeout=60, tag=AlohaBrowser解锁Premium
 
 [MITM]
 hostname = api.alohaprofile.com
