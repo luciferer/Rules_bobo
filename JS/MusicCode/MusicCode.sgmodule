@@ -1,6 +1,8 @@
 #!name=音乐搜索
 #!desc=使用百度或谷歌 搜索框输入 “md#音乐名或歌手名” 或 “ml#音乐名或歌手名” 即可搜索音乐
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=XiaoMao[https://github.com/xiaomaoJT/QxScript]
 
 [Script]
 # > 音乐搜索--使用百度或谷歌 搜索框输入 “md#音乐名或歌手名” 或 “ml#音乐名或歌手名” 即可搜索音乐
