@@ -1,7 +1,8 @@
 #!name=美颜相机
 #!desc=美颜相机 解锁VIP
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MeiYanXJ.png
 #!openUrl=https://apps.apple.com/app/id592331499
 
@@ -9,5 +10,5 @@
 # > 美颜相机 解锁VIP
 http-response ^https:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiYanXJ/JS/MeiYanXJ.js, requires-body=true, timeout=60, tag=美颜相机 解锁VIP
 
-[Mitm]
+[MITM]
 hostname = *.meiyan.com
