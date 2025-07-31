@@ -1,7 +1,8 @@
 #!name=地震预警-倒计时警报
 #!desc=地震预警-解锁会员
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DiZhenYuJing.png
 #!openUrl=https://apps.apple.com/app/id713947342
 
@@ -9,5 +10,5 @@
 # > 地震预警-解锁会员
 http-response ^https?:\/\/mobile-new\.chinaeew\.cn\/v\d\/order\/apple\/vip script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DiZhenYuJing/JS/DZYJ.js, requires-body=true, timeout=60, tag=地震预警-解锁会员
 
-[Mitm]
+[MITM]
 hostname = mobile-new.chinaeew.cn
