@@ -1,7 +1,8 @@
 #!name=MyVinyl解锁Pro
 #!desc=My Vinyl+ CD, Vinyl, Records解锁Pro.工具类 ❖ 音乐黑胶收藏
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=XiaoMao[https://github.com/xiaomaoJT/QxScript]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MyVinyl.png
 #!openUrl=https://apps.apple.com/app/id1547173908
 
@@ -9,5 +10,5 @@
 # > MyVinyl解锁Pro
 http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MyVinyl/JS/MyVinyl.js, requires-body=true, timeout=60, tag=My Vinyl解锁Pro
 
-[Mitm]
+[MITM]
 hostname = api.revenuecat.com
