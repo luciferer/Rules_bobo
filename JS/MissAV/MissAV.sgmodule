@@ -1,6 +1,8 @@
 #!name=MissAV
 #!desc=MissAV去广告
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=limbopro[https://github.com/limbopro/Adblock4limbo]
 #!openUrl=https://missav.ai/
 
 [Script]
