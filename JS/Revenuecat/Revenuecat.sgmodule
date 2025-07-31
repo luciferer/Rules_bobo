@@ -1,6 +1,9 @@
 #!name=Revenuecat 系列解锁合集
-#!desc=使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!desc=Revenuecat 系列解锁合集
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite], 墨鱼ddgksf2013[https://github.com/ddgksf2013/MoYu], baby[https://github.com/Yu9191], 枫叶afengye[https://github.com/afengye/QX], 骨钉Guding88[https://github.com/Guding88/Script/blob/main/Readme.md]
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RevenueCat-icon.png
 
 [Script]
 # > Revenuecat 系列解锁合集-1
