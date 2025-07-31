@@ -1,7 +1,8 @@
 #!name=随手写FeeNote
 #!desc=随手写FeeNote-解锁Premium
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FeeNote.png
 #!openUrl=https://apps.apple.com/app/id822218131
 
@@ -9,5 +10,5 @@
 # > 随手写FeeNote-解锁Premium
 http-response http:\/\/www\.kkmop\.com\/vipMsg1 script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FeeNote/JS/FeeNote.js, requires-body=true, timeout=60, tag=随手写FeeNote-解锁Premium
 
-[Mitm]
+[MITM]
 hostname = www.kkmop.com
