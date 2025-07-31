@@ -1,6 +1,8 @@
 #!name=功能插件｜QQ链接解锁
-#!desc=解除QQ内访问非白名单之外的地址提示停止访问该页面的限制，并移除跟踪参数。\n作者：可莉🅥
-#!category=功能插件
+#!desc=解除QQ内访问非白名单之外的地址提示停止访问该页面的限制，并移除跟踪参数。
+#!date=2025-08-01
+#!category=😍BOBO Premium
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!openUrl=https://apps.apple.com/app/id444934666
 
 [URL Rewrite]
