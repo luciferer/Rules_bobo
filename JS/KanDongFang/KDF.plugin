@@ -1,6 +1,8 @@
 #!name=📺 看东方 NBA & 电视剧 → HTML + M3U 脚本
 #!desc=脚本功能：提取会员视频 跳转浏览器HTML页面
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=baby[https://github.com/Yu9191]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/KanDongFang.png
 #!openUrl=https://apps.apple.com/app/id1008005924
 
@@ -19,5 +21,5 @@ http-response https:\/\/bp-api\.bestv\.(?:com\.cn|cn)\/cms\/api\/(live\/studio\/
 http-response ^https?:\/\/360\.com\/(?:video|nba\.m3u|dianshi\.m3u)$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KanDongFang/JS/KDF.js, requires-body=true, timeout=60, tag=KDF
 
 
-[Mitm]
+[MITM]
 hostname= 360.com, bp-api.bestv.com.cn, bp-api.bestv.cn

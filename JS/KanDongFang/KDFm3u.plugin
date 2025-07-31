@@ -1,6 +1,8 @@
 #!name=📺 看东方 NBA & 电视剧 → HTML + M3U 脚本
 #!desc=脚本功能：看东方NBA直播，回放（鲸鱼解说）复制链接添加到播放器订阅即可
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=baby[https://github.com/Yu9191]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/KanDongFang.png
 #!openUrl=https://991.com/nba.m3u
 
@@ -8,5 +10,5 @@
 # > 📺 看东方 NBA & 电视剧 → HTML + M3U 脚本
 http-response ^https:\/\/991\.com\/nba\.m3u script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KanDongFang/JS/m3u.js, requires-body=true, timeout=60, tag=m3u
 
-[Mitm]
+[MITM]
 hostname= 991.com
