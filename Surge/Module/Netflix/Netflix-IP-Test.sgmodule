@@ -1,7 +1,8 @@
 #!name=Netflix IP Test
 #!desc=Netflix 鎖區測試，本版本為個人繁體化自用
-#!category=Panels
-#!system=ios
+#!date=2025-08-01
+#!category=😍BOBO
+#!author= Rabbit-Spec[https://github.com/Rabbit-Spec/Surge]
 
 [Panel]
 netflixCheck = script-name=netflixCheck,update-interval=1, 
