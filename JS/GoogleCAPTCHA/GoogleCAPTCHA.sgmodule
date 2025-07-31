@@ -1,6 +1,8 @@
 #!name=Google搜索人机验证解决方案
 #!desc=Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在模块参数填写策略/策略组名的正则表达式。
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=野比大佬NobyDa[https://github.com/NobyDa/Script]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Google.png
 #!arguments=策略正则,脚本引擎:auto
 #!arguments-desc=策略正则：策略/策略组名的正则表达式，例如：\n^(🇸🇬|🇭🇰)\s.*\d+$ 如需同时使用所有策略/策略组可使用 .+ 表示。\n\n脚本引擎：jsc/webview/auto，默认auto。
