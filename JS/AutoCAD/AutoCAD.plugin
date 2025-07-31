@@ -1,14 +1,14 @@
 #!name=AutoCAD解锁Pro
-#!desc=AutoCAD解锁Pro.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
-#!date=2024-11-01
+#!desc=AutoCAD解锁Pro.
+#!date=2025-08-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!author=Mike-offers[https://github.com/Mike-offers/Rewrite]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AutoCAD.png
-#!openUrl=https://apps.apple.com/app/id393149734
+#!openUrl=https://apps.apple.com/app/id921765888
 
 [Script]
 # > AutoCAD解锁Pro
-http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status script-path=https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/AutoCAD.js, requires-body=true, timeout=60, tag=AutoCAD
+http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status script-path=https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/AutoCAD.js, requires-body=true, timeout=60, tag=AutoCAD解锁Pro
 
 [MITM]
 hostname = app.autocad360.com
