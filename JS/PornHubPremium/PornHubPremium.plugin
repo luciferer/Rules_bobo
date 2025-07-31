@@ -1,6 +1,8 @@
 #!name=PornHub Unlock Premium
 #!desc=PornHub Unlock Premium
+#!date=2025-08-01
 #!category=😍BOBO Premium
+#!author=浥轻尘yqc007[https://github.com/yqc007/QuantumultX]
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/Qure/Image/Color/Pornhub.png
 #!openUrl=https://cn.pornhubpremium.com/
 
@@ -8,5 +10,5 @@
 # > PornHub Unlock Premium
 http-request ^https?:\/\/cn\.pornhubpremium\.com\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PornHubPremium/JS/PornHubPremiumCrack.js, timeout=60, tag=PornHubPremiumCrack
 
-[Mitm]
+[MITM]
 hostname = cn.pornhubpremium.com
